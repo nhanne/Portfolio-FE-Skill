@@ -454,7 +454,12 @@ body.dark-theme {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
-.qualification__country{
+.qualification__country,
+.qualification__year,
+.qualification__gpa,
+.qualification__list,
+.qualification__list-title{
+  display: block;
   margin-bottom: .75rem;
 }
 .qualification__img{
@@ -466,6 +471,8 @@ body.dark-theme {
   opacity: .1;
 }
 
+.qualification__list-item{
+}
 /*=============== SERVICES ===============*/
 
 .services__container{
