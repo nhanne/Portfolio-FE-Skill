@@ -298,7 +298,8 @@ body.dark-theme {
   align-items: flex-end;
 }
 .home__perfil img{
-  width: 150px;
+  /* width: 150px; */
+  width: 100%;
 }
 .home__shape-waves, .home__shape-circle{
   position: absolute;
@@ -1018,7 +1019,8 @@ body.dark-theme {
     border-radius: 10.6rem;
   }
   .home__perfil img{
-    width: 300px;
+    /* width: 300px; */
+    width: 100%;
   }
   .home__shape-waves{
     width: 100px;
