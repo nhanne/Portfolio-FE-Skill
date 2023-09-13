@@ -1079,7 +1079,7 @@ body.dark-theme {
     bottom: 5rem;
   }
   .services__container{
-    grid-template-columns: repeat(3,max-content);
+    grid-template-columns: repeat(2,max-content);
   }
   .services__card{
     width: 245px;
