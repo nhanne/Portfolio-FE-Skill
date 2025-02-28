@@ -475,16 +475,17 @@ body.dark-theme {
 }
 
 .skills__blob {
-  width           : 80px;
-  height          : 100px;
-  background-color: var(--container-color);
-  border-radius   : 3rem;
-  place-items     : center;
-  margin-bottom   : 1rem
+  width        : 70px;
+  height       : 70px;
+  border-radius: 50%;
+  place-items  : center;
+  margin-bottom: 1rem
 }
 
 .skills__blob img {
-  width: 40px;
+  width    : 40px;
+  animation: spin 3s linear infinite;
+
 }
 
 .skills__name {
@@ -592,6 +593,42 @@ body.dark-theme {
   background: linear-gradient(180deg, #0c09ec, #08b0f3);
 }
 
+.qualification__info>div:hover .qualication__list {
+  display  : block;
+  animation: popupAnimation 0.3s ease-out forwards;
+}
+
+.qualication__list {
+  z-index      : 3;
+  display      : none;
+  border-radius: 14px;
+  padding      : 30px;
+  position     : absolute;
+  width        : 100%;
+  top          : 20px;
+  right        : 105%;
+  margin-right : 10px;
+  color        : rgb(232, 250, 255);
+  background   : rgba(1, 1, 1, 0.39);
+  background   : linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
+  background   : -webkit-linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
+  background   : -moz-linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
+  opacity      : 0;
+  transform    : scale(0.8);
+}
+
+@keyframes popupAnimation {
+  from {
+    opacity  : 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity  : 1;
+    transform: scale(1);
+  }
+}
+
 .qualification__name {
   font-size    : var(--normal-font-size);
   margin-bottom: 1.25rem;
@@ -621,8 +658,6 @@ body.dark-theme {
   transform: rotate(15deg);
   opacity  : .1;
 }
-
-.qualification__list-item {}
 
 /*=============== SERVICES ===============*/
 
@@ -965,7 +1000,7 @@ body.dark-theme {
 
   .projects__container,
   .testimonial__container {
-    width: 400px;
+    width: 600px;
   }
 
   .projects__container {
@@ -1440,4 +1475,14 @@ ul.social_media li .titulo {
   transform       : scale(0);
   transition      : 0.5s;
   transition-delay: 0s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
