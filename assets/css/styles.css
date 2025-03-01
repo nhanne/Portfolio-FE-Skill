@@ -126,7 +126,6 @@ body.dark-theme {
   --container-color    : hsl(207, 4%, 12%);
   --gradient-text-color: white;
   --text-color-light   : hsl(194.3deg 100% 73.91%);
-  background           : rgba(1, 1, 1, 0.39);
   background           : linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
   background           : -webkit-linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
   background           : -moz-linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
@@ -556,6 +555,7 @@ body.dark-theme {
   padding-left: 50px;
 }
 
+
 /* Style cho từng mục */
 .qualification__info>div {
   position          : relative;
@@ -593,6 +593,12 @@ body.dark-theme {
   background: linear-gradient(180deg, #0c09ec, #08b0f3);
 }
 
+.qualification__info>div:hover {
+  background: linear-gradient(10deg, rgba(233, 231, 231, 0.39) 0%, #84cbfa 80%);
+  background: -webkit-linear-gradient(10deg, rgba(233, 231, 231, 0.39) 0%, #84cbfa 80%);
+  background: -moz-linear-gradient(10deg, rgba(233, 231, 231, 0.39) 0%, #84cbfa 80%);
+}
+
 .qualification__info>div:hover .qualication__list {
   display  : block;
   animation: popupAnimation 0.3s ease-out forwards;
@@ -609,7 +615,6 @@ body.dark-theme {
   right        : 105%;
   margin-right : 10px;
   color        : rgb(232, 250, 255);
-  background   : rgba(1, 1, 1, 0.39);
   background   : linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
   background   : -webkit-linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
   background   : -moz-linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
