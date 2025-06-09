@@ -121,7 +121,7 @@ img {
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color        : hsl(207, 4%, 95%);
-  --text-color         : hsl(207, 4%, 65%);
+  --text-color         : hsl(0deg 0% 100%);
   --body-color         : transparent;
   --container-color    : hsl(207, 4%, 12%);
   --gradient-text-color: white;
@@ -1182,7 +1182,7 @@ body.dark-theme {
   }
 
   .home__perfil {
-    width        : 340px;
+    width        : 315px;
     height       : 390px;
     border-radius: 10.6rem;
   }
