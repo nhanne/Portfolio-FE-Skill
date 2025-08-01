@@ -599,7 +599,8 @@ body.dark-theme {
   background: -moz-linear-gradient(10deg, rgba(233, 231, 231, 0.39) 0%, #84cbfa 80%);
 }
 
-.qualification__info>div:hover .qualication__list {
+.qualification__info>div:hover .qualication__list,
+.qualification__info>div:hover .certification__list {
   display  : block;
   animation: popupAnimation 0.3s ease-out forwards;
 }
@@ -611,14 +612,14 @@ body.dark-theme {
   padding      : 30px;
   position     : absolute;
   width        : 100%;
-  top          : 20px;
-  right        : 105%;
+  bottom       : 100%;
+  left         : 0;
   margin-right : 10px;
   color        : rgb(232, 250, 255);
   background   : linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
   background   : -webkit-linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
   background   : -moz-linear-gradient(110deg, rgba(1, 1, 1, 0.39) 0%, #25485f 80%);
-  opacity      : 0;
+  opacity      : 1;
   transform    : scale(0.8);
 }
 
